@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../components/background.dart';
-import '../components/text_field.dart';
+import '../const/background.dart';
+import '../widgets/text_field.dart';
 import '../models/model_idea.dart';
 
 class ListScreen extends StatefulWidget {
@@ -22,7 +22,7 @@ class _ListScreenState extends State<ListScreen> {
   }
 
   void clearText() {
-    _ideaController .clear();
+    _ideaController.clear();
   }
 
   @override
@@ -50,7 +50,7 @@ class _ListScreenState extends State<ListScreen> {
                       if (_ideaController.text.isNotEmpty) {
                         setState(() {
                           addIdea(value);
-                          _ideaController .clear();
+                          _ideaController.clear();
                         });
                       }
                     });

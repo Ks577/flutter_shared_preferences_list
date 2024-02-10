@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import '../components/background.dart';
-import '../components/text_field.dart';
+import '../const/background.dart';
+import '../widgets/text_field.dart';
 import '../models/model_idea.dart';
 
 class IdeaScreen extends StatefulWidget {
-  const IdeaScreen({Key? key}) : super(key: key);
+  const IdeaScreen({super.key});
 
   @override
   State<IdeaScreen> createState() => _IdeaScreenState();
